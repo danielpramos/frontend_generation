@@ -1,42 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <nav>
-        <li>
-            <a href="index.html"> Home</a>
-        </li>
-        <li>
-            <a href="contato.html"> Contato</a>
-        </li>
+    <nav id="links">
+        <ul >
+            <li>
+                <a href="index.html"> Home</a>
+            </li>
+            <li>
+                <a href="contato.html"> Contato</a>
+            </li>
+        </ul>
     </nav>
 
-    <h1>Sobre o Daniel</h1>
+    <main>
+        <header class="titulo">
+            <h1>Sobre o Daniel</h1>
+        </header>
 
-    <p>
-        Sou muito ligado nesse mundo de  tecnologia e fiz um curso Técnico em Automação, e tive contato com a programação em linguagem C++ com Arduíno, e agora estou aqui na busca de ser um Desenvolvedor FullStack Java Jr. Sou muito ligado em cultura Geek.
+        <section class="container">
+            <div class="comentario">
+                <p>
+                    Sou muito ligado nesse mundo de  tecnologia e fiz um curso Técnico em Automação, e tive contato com a programação em linguagem C++ com Arduíno, e agora estou aqui na busca de ser um Desenvolvedor FullStack Java Jr. Sou muito ligado em cultura Geek.     
+                </p>
+                <p>
+                    Os meus Hobbys atuais são assistir animes, filmes, seriados e gosto de uma boa jogatina. 
+                </p>
+            </div>
 
-            
-    </p>
-    
-    <p>
-        Os meus Hobbys atuais são assistir animes, filmes, seriados e gosto de uma boa jogatina. 
-    </p>
+            <div>
+                <img class="imagem circulo comentario" src="./assets/img/Foto.jpg" alt="Minha foto " width="300">
+            </div>
 
-    <img src="./assets/Foto.jpg" alt="Minha foto " width="300">
+        </section> 
+    </main>
 
-    <h2>Meu video Predileto</h2>
+    <h2 class="titulo" >Meu video Predileto</h2><br>    
+    <h3 class="titulo">Aplicativo VAGASPCDs</h3>
 
-    <h3>Aplicativo VAGASPCDs</h3>
+    <div class="container mb-50">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J-byQ3PLOck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/J-byQ3PLOck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
 
+    <footer>
 
-    
+        <div class="container mb-20">
+            <a href="https://www.linkedin.com/in/dnldev/" target="_blank">
+                <img class="social comentario" src="./assets/img/linkedin.png" alt="Logo Linkedin">
+            </a>
+            <a href="https://github.com/danielpramos" target="_blank">
+                <img class="social comentario" src="./assets/img/personagem-do-github.png" alt="Logo GitHub">
+            </a>
+            <a href="https://www.facebook.com/daniel.pinheiro.92102" target="_blank">
+                <img class="social comentario" src="./assets/img/facebook.png" alt="Logo Facebook">
+            </a>
+            <a href="https://www.instagram.com/daniel_pinheiro5291/" target="_blank">
+                <img class="social comentario" src="./assets/img/instagram.png" alt="Logo Instagran">
+            </a>
+        </div>
+
+        <p class="titulo rodape">
+            2022@ Todos os direitos reservados: PINHEIRO Cia
+        </p>
+    </footer>
+
 </body>
 </html>
