@@ -7,16 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        var audio = new Audio();
+        var audioNavegar = new Audio();
+        var audioEnviar = new Audio();
+       audio.src="./assets/sounds/89780862.mp3";
+       audioNavegar.src="./assets/sounds/Glitch(9)logo.wav"
+       audioEnviar.src="./assets/sounds/Glitch(5)enviar.wav"   
+   </script>
 </head>
 
 <body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <nav id="links">
         <ul>
            <li>
-               <a href="index.html">Home </a>
+               <a onmousedown="audioNavegar.play()" href="index.html">Home </a>
             </li>
             <li>
-                <a href="contato.html">Contato</a>
+                <a onmousedown="audioNavegar.play()" href="contato.html">Contato</a>
             </li>
         </ul>
     </nav> 
@@ -42,7 +62,7 @@
                 <div id="txtAssunto"></div>
                 <br />
                 <br>
-                <button onclick="enviar()">Enviar</button>
+                <button onmousedown="audioEnviar.play()" onclick="enviar()">Enviar</button>
             </form>
 
             <section class="ml-50">
@@ -59,16 +79,16 @@
     
             <div class="container">
                 <a href="https://www.linkedin.com/in/dnldev/" target="_blank">
-                    <img class="social comentario" src="./assets/img/linkedin.png" alt="Logo Linkedin" >
+                    <img onmouseover="audio.play()" class="social comentario" src="./assets/img/linkedin.png" alt="Logo Linkedin" >
                 </a>
                 <a href="https://github.com/danielpramos" target="_blank">
-                    <img class="social comentario" src="./assets/img/personagem-do-github.png" alt="Logo GitHub">
+                    <img onmouseover="audio.play()" class="social comentario" src="./assets/img/personagem-do-github.png" alt="Logo GitHub">
                 </a>
                 <a href="https://www.facebook.com/daniel.pinheiro.92102" target="_blank">
-                    <img class="social comentario" src="./assets/img/facebook.png" alt="Logo Facebook">
+                    <img onmouseover="audio.play()" class="social comentario" src="./assets/img/facebook.png" alt="Logo Facebook">
                 </a>
                 <a href="https://www.instagram.com/daniel_pinheiro5291/" target="_blank">
-                    <img class="social comentario" src="./assets/img/instagram.png" alt="Logo Instagran">
+                    <img onmouseover="audio.play()" class="social comentario" src="./assets/img/instagram.png" alt="Logo Instagran">
                 </a>
             </div>
     
@@ -79,7 +99,6 @@
     
 
     </main>
-
 
     <script src="./assets/scripts/script.js"></script>
 

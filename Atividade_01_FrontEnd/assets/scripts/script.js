@@ -75,3 +75,33 @@ function normalMapa(){
     mapa.style.width = '400px';
     mapa.style.height = '300px';
 }
+/*var audio = ""
+const som = document.querySelector('.som'); 
+   som.onmouseover = function tocar(){
+    const musica = document.querySelector('audio');
+    audio = document.createElement('audio');
+    audio.src ='89780862.mp3';
+    audio.autoPlay = true;
+    document.body.appendChild(audio);
+}*/
+
+/*const link = document.querySelector('.som');
+const audio = document.querySelector('audio');
+function tocar(){
+    audio.
+    audio.autoplay = true;
+}*/
+
+/*var som = document.getElementById("som");
+var local =document.querySelector("social")
+
+$("local").mousemove(function(){
+  som.pause();
+  som.currentTime = 0;
+  som.play();
+});*/
+function tocar(){
+    let som = document.querySelector("#som")
+    var audio = new Audio();
+        audio.src="./assets/sounds/89780862.mp3"
+}
