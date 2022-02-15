@@ -100,8 +100,11 @@ $("local").mousemove(function(){
   som.currentTime = 0;
   som.play();
 });*/
+/*const som = document.querySelector("#som")
+var audio = new Audio();
+
 function tocar(){
-    let som = document.querySelector("#som")
-    var audio = new Audio();
-        audio.src="./assets/sounds/89780862.mp3"
-}
+        som.play();
+}*/
+
+
